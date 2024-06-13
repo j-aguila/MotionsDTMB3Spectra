@@ -7,7 +7,7 @@
 - Vessel Velocity is kept constant at 30kn and it is travelling in an oblique direction to the unidirectional wave patern. The direction of the waves is 30 degrees with respect to the symetry plane of the battleship.
 # Naming Convention for the Files
   - Motion Files will be permutations of the following combinations:
-        {H,P,R}__{97,124,134}__{1 to 50}
+        {H,P,R} _ {97,124,134} _ {1 to 50}
         For example H_134_3.csv is the Heave motion derived from the 3rd seed of state 3 (T_p=13.4s).
   - Wave prove files will be permutations of the following combinations:
         WaveProve{X,Y} _ {97,124,134} _ {1 to 50} _ {Ylocations or Xlocations}
