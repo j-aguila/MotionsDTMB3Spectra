@@ -8,9 +8,9 @@
 
 # Naming Convention for the Files
 - Motion Files will be permutations of the following combinations:
-  - `{H, P, R} _ {97, 124, 134} _ {1 to 50}`
+  - `{H, P, R}_{97, 124, 134}_{1 to 50}`
   - For example, `H_134_3.csv` is the Heave motion derived from the 3rd seed of state 3 (T_p=13.4s).
 - Wave probe files will be permutations of the following combinations:
-  - `WaveProbe{X, Y} _ {97, 124, 134} _ {1 to 50} _ {Ylocations or Xlocations}`
+  - `WaveProbe{X, Y}_{97, 124, 134}_{1 to 50}_{Ylocations or Xlocations}`
   - `Ylocations=[250, 200, 150, 100, 50, 0]`
   - `Xlocations=[-250, -200, -150, -100, -50, 0]`
