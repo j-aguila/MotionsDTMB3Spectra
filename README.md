@@ -10,6 +10,6 @@
         {H,P,R}__{97,124,134}__{1 to 50}
         For example H_134_3.csv is the Heave motion derived from the 3rd seed of state 3 (T_p=13.4s).
   - Wave prove files will be permutations of the following combinations:
-        WaveProve{X,Y}__{97,124,134}__{1 to 50}__{Ylocations or Xlocations}
+        WaveProve{X,Y}___{97,124,134}___{1 to 50}__{Ylocations or Xlocations}
         Ylocations=[250,200,150,100,50,0]
         Xlocations=[-250,-200,-150,-100,-50,0]
