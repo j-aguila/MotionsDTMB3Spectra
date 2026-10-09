@@ -1,0 +1,5 @@
+numpy
+pandas
+xarray
+matplotlib>=3.6   # layout="constrained" / get_layout_engine in plot_dtmb_appendix.py
+pypdf>=3.0        # optional: only for the merged appendix_A_all.pdf
