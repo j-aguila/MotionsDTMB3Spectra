@@ -19,6 +19,23 @@ The state code in each filename is 10 × T<sub>p</sub>.
   The records are also plotted in Appendix A (Figs. A-1 to A-9) of the author's
   [PhD thesis (MIT, 2024)](https://hdl.handle.net/1721.1/156348). See [Citation](#citation).
 
+## Quick start
+
+From the repository root (Python ≥ 3.9):
+
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+python check_data.py                 # verify the dataset is complete (a few seconds)
+python plot_dtmb_appendix.py --figs A-1 A-7 --formats png --combined ''   # first look (< 1 min)
+python plot_dtmb_appendix.py         # all thesis figures A-1 to A-9 -> ./appendix_figs/
+```
+
+The second command plots the longitudinal wave probes (Fig. A-1) and the heave/pitch/roll
+(Fig. A-7) for all seeds of sea state 1. To work with individual records in Python, see
+[`MotionsDTMB3Repo`](#motionsdtmb3repo) below.
+
 ## Data: `MotionsAndWaveData/`
 
 All 3,212 files sit flat in one directory.
@@ -70,10 +87,10 @@ Use `repo.probe_locations()` (see below) for the exact sets.
 | `motions_dtmb3_repo.py` | `MotionsDTMB3Repo`: indexes the data directory and loads series as pandas / xarray objects |
 | `analyze_dtmb.py` | Short usage example of `MotionsDTMB3Repo` |
 | `plot_dtmb_appendix.py` | Regenerates thesis Figs. A-1 to A-9 |
+| `check_data.py` | Verifies file counts, seed and probe coverage, and Δt per sea state |
+| `requirements.txt` | `numpy`, `pandas`, `xarray`, `matplotlib`; `pypdf` (optional, only for the merged PDF) |
 
-Requirements: Python ≥ 3.9 with `numpy`, `pandas`, `xarray` and `matplotlib`. `pypdf` is optional
-and only builds the combined PDF. Run the scripts from the repository root, so that
-`./MotionsAndWaveData` resolves.
+Run the scripts from the repository root, so that `./MotionsAndWaveData` resolves.
 
 ### `MotionsDTMB3Repo`
 
